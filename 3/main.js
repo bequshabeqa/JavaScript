@@ -28,7 +28,7 @@ function isAvailable() {
 console.log(isAvailable());
 
 // დავალება 4
-function isYesOrNo() {
+function isYesOrNo(year = 2025) {
     let year = prompt("შეიყვანე სასურველი წელი:");
 
     // მხოლოდ ორ ტოლობაზე მუშაობს და ავტომატურად როგორ მიხვდეს რომელი წელია ნაკიანი რომელი არა???
@@ -44,14 +44,19 @@ console.log(isYesOrNo());
 
 // დავალება 5
 function calculator() {
-    let ricxvi1 = prompt("შეიყვანე რიცხვი 1: ");
-    let ricxvi2 = prompt("შეიყვანე რიცხვი 2: ");
+    let ricxvi1 = Number(prompt("შეიყვანე რიცხვი 1: "));
+    let ricxvi2 = Number(prompt("შეიყვანე რიცხვი 2: "));
+    
+    // if (isNaN(ricxvi1) || isNaN(ricxvi2)) {
+    //     alert("გთხოვთ, შეიყვანეთ მხოლოდ რიცხვები!");
+    // }
+    // როცა ვრთავ და ციფრისგან განსხვავებული შემყავს წყვეტს??? როგორ ვქნა რო გააგრძელოს
     let mokmedeba = prompt("შეიყვანე მოქმედება: ");
 
     let shedegi;
 
     if (mokmedeba === "+") {
-        shedegi = ricxvi1 + ricxvi2;
+        shedegi = (ricxvi1 + ricxvi2);
     } else if (mokmedeba === "-") {
         shedegi = ricxvi1 - ricxvi2;
     } else if (mokmedeba === "*") {
@@ -65,10 +70,7 @@ function calculator() {
     } else {
         shedegi = "არასწორი მოქმედება! გთხოვთ შეიყვანოთ +, -, * ან /";
     }
-
     alert("შედეგი: " + shedegi);
 }
 
 calculator();
-
-// მხოლოდ მიმატება არ კეთდება სწორად ???  შეყვანილ რიცხვებს გვერდიგვერდ წერს
