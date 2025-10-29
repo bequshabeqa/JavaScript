@@ -1,0 +1,20 @@
+.sizeChanger {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 25px;
+}
+
+#sizePlus, #sizeMinus {
+    padding: 10px;
+    font-size: 15px;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    margin: 10px 10px;
+}
+
+img {
+    width: 300px;
+    transition: width 0.3s ease;
+    border-radius: 10px;
+}
