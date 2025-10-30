@@ -1,18 +1,20 @@
-function colorChange(red) {
-    const Red = document.getElementById("Red");
-    const colorBtn = document.getElementById(`colorChanger`);
-    document.body.style.backgroundColor = Red;
-    Red.innerText = `Background Color: ${Red}`;
+function Red() {
+   const Red = document.getElementById("Red");
+   const body = document.body;
+   body.style.backgroundColor = "red";
+   Red.innerText = `Background color: ${red}`;
 }
 
-function colorChange(blue) {
+function Blue() {
     const Blue = document.getElementById("Blue");
-    document.body.style.backgroundColor = Blue;
-    Blue.innerText = `Background Color: ${Blue}`;
+    const body = document.body;
+    body.style.backgroundColor = "blue";
+    Blue.innerText = `Background Color: ${blue}`;
 }
 
-function colorChange(green) {
+function Green() {
     const Green = document.getElementById("Green");
-    document.body.style.backgroundColor = Green;
-    Green.innerText = `Background Color: ${Green}`;
+    const body = document.body;
+    body.style.backgroundColor = "green";
+    Green.innerText = `Background Color: ${green}`;
 }
