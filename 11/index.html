@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+
+</head>
+<body>
+
+<div class="container">
+
+    <input type="text" id="userInput" placeholder="Search contacts" title="Search by name" onkeyup="searchContact()">
+
+
+    <div class="slideshow-container">
+
+        <div class="myPictures fade">
+            <div class="textNumber"> 1 / 4 </div>
+                <img src="images/man watch.jpg" style="width: 100%">
+                <p>Watch Product</p>
+                <p>Price 35.99 $</p>
+                <button class="addBtn"> Add to Cart</button>
+            <div class="pictureText"></div>
+        </div>
+
+        <div class="myPictures fade">
+            <div class="textNumber"> 2 / 4 </div>
+                <img src="images/rings.jpg" style="width: 100%">
+                <p>Rings</p>
+                <p>Price 25.50 $</p>
+                <button class="addBtn"> Add to Cart</button>
+            <div class="pictureText"></div>
+        </div>
+
+        <div class="myPictures fade">
+            <div class="textNumber"> 3 / 4 </div>
+                <img src="images/ring.jpg" style="width: 100%">
+                <p>Ring</p>
+                <p>Price 15.75 $</p>
+                <button class="addBtn"> Add to Cart</button>
+            <div class="pictureText"></div>
+        </div>
+
+        <div class="myPictures fade">
+            <div class="textNumber"> 4 / 4 </div>
+                <img src="images/wallet.jpg" style="width: 100%">
+                <p>Wallet</p>
+                <p>Price 55.99 $</p>
+                <button class="addBtn"> Add to Cart</button>
+            <div class="pictureText"></div>
+        </div>
+
+    </div>
+
+
+         <div style="text-align: center;">
+            <span class="dot activeDot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+
+</div>
+
+    <script src='autoSlider.js'></script>
+    <script src='script.js'></script>
+</body>
+</html>

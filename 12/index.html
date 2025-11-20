@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Registration Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    </head>
+    <body>
+        <div>
+            <label>მომხმარებლის სახელი</label>
+            <input placeholder="Enter your username" id="username" required onclick="validateUsername()">
+            <br>
+            <br>
+            <label>Email</label>
+            <input id="email" placeholder="Enter your email" type="email" required onclick="validateEmail()">
+            <br>
+            <br>
+            <label>პაროლი</label>
+            <input placeholder="Enter your password" id="password" type="password" required onclick="validatePassword()">
+            <br>
+            <br>   
+            <label>მისამართი</label>
+            <input id="address" type="text" pattern="^[A-Za-zა-ჰ]+$" required placeholder="შეიყვანეთ მისამართი">
+            <br>
+            <br>  
+            <label>ფოსტკოდი</label>
+            <input id="postal" type="number" placeholder="Enter postal code" required onclick="validatePostal()">
+            <br>
+            <br>
+            <label>ტელეფონის ნომერი</label>
+            <input id="tel" type="tel" pattern="^\+[0-9]{1,3}[0-9]{6,12}$" required placeholder="+995555123456">
+            <br>
+            <br>
+            
+            <button onclick="registerUser()" id="regBtn">Register</button>
+
+            <div id="res"></div>
+        </div>
+
+        <script src="main.js"></script>
+    </body>
+</html>
